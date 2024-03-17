@@ -13,3 +13,4 @@
 * https://github.com/iqbal-lab-org/pling
 * https://github.com/apcamargo/pyleiden
 * https://github.com/phac-nml/genomic_address_service
+* https://github.com/AbeelLab/SHIP
