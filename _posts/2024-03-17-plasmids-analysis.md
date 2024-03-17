@@ -10,3 +10,6 @@
 
 * https://gitlab.com/sirarredondo/mge-cluster
 * https://github.com/wtmatlock/plasmid-network-analysis
+* https://github.com/iqbal-lab-org/pling
+* https://github.com/apcamargo/pyleiden
+* https://github.com/phac-nml/genomic_address_service
