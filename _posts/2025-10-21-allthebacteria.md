@@ -5,10 +5,13 @@ Date: 21 Oct 2025
 Public sequencing projects have generated an avalanche of raw data—much of it unassembled, inconsistently processed, and difficult to reuse. AllTheBacteria.org solves this problem by delivering a uniformly assembled, annotated, and quality‑controlled collection of ≈2 million bacterial and archaeal genomes. Whether you need to find the closest relative of a new isolate, build a phylogenetic tree, or trace plasmid‑borne antimicrobial‑resistance (AMR) genes, this resource gives you a solid foundation for large‑scale comparative genomics.
 
 ## 1. What Is AllTheBacteria.org?
-Feature	Why It Matters
-Uniformly processed genomes	Eliminates batch effects; every assembly follows the same pipeline.
-Standardized annotations	Consistent gene calls, GTDB‑based taxonomy, and AMR detection (AMRFinderPlus).
-Searchable indexes	Pre‑built sketch libraries (sketchlib, sourmash) let you locate similar genomes instantly.
+
+|Method	|Command / Link|	Tips|
+| Feature                     | Why It Matters |
+|-----------------------------|----------------|
+| **Uniformly processed genomes** | Eliminates batch effects; every assembly follows the same pipeline. |
+| **Standardized annotations**    | Consistent gene calls, GTDB‑based taxonomy, and AMR detection (AMRFinderPlus). |
+| **Searchable indexes**          | Pre‑built sketch libraries (`sketchlib`, `sourmash`) let you locate similar genomes instantly. |
 ## 2. How to Use the Data
 ### a. As a skani‑style reference database
 If you already use genome‑sketching tools (e.g., skani, sourmash), AllTheBacteria.org supplies ready‑made indexes that act as a “Google” for microbial genomes.
@@ -42,10 +45,11 @@ Identify “super‑plasmids” that have acted as hubs for resistance gene exch
 ## 3. Downloading the Dataset
 You do not need an OSF account—the data are publicly available through several mirrors.
 
-|Method	|Command / Link|	Tips|
-|AWS S3 (most flexible)|	bash<br>aws s3 sync --no-sign-request s3://allthebacteria-assemblies/ ./ATB/<br>	|Works without AWS credentials; use --exclude/--include to fetch only what you need (e.g., */genomes/).|
-|Open Science Framework (OSF)	|Browse the project UI and click “Download”.	|Handy for occasional, small‑scale pulls.|
-|ENA FTP|	https://ftp.ebi.ac.uk/pub/databases/AllTheBacteria/Releases/0.2/	|Mirrors the S3 bucket; use any FTP client.|
+| Method | Command / Link | Tips |
+|--------|----------------|------|
+| **AWS S3 (most flexible)** | ```bash<br>aws s3 sync --no-sign-request s3://allthebacteria-assemblies/ ./ATB/<br>``` | Works without AWS credentials; use `--exclude/--include` to fetch only what you need (e.g., `*/genomes/`). |
+| **Open Science Framework (OSF)** | Browse the project UI and click “Download”. | Handy for occasional, small‑scale pulls. |
+| **ENA FTP** | https://ftp.ebi.ac.uk/pub/databases/AllTheBacteria/Releases/0.2/ | Mirrors the S3 bucket; use any FTP client. |
 Tip: If storage is a concern, sync only the annotation files (*.gff, *.faa) or the specific taxonomic groups you plan to analyse.
 
 ## 4. Real‑World Example: Tracing Plasmid‑Mediated AMR
