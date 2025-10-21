@@ -6,12 +6,12 @@ Public sequencing projects have generated an avalanche of raw data—much of it 
 
 ## 1. What Is AllTheBacteria.org?
 
-|Method	|Command / Link|	Tips|
 | Feature                     | Why It Matters |
 |-----------------------------|----------------|
 | **Uniformly processed genomes** | Eliminates batch effects; every assembly follows the same pipeline. |
 | **Standardized annotations**    | Consistent gene calls, GTDB‑based taxonomy, and AMR detection (AMRFinderPlus). |
 | **Searchable indexes**          | Pre‑built sketch libraries (`sketchlib`, `sourmash`) let you locate similar genomes instantly. |
+
 ## 2. How to Use the Data
 ### a. As a skani‑style reference database
 If you already use genome‑sketching tools (e.g., skani, sourmash), AllTheBacteria.org supplies ready‑made indexes that act as a “Google” for microbial genomes.
