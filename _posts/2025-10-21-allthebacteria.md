@@ -38,29 +38,31 @@ Leverage the GTDB taxonomy embedded in each record, or construct your own tree f
 
 ### d. Plasmid and mobile element investigations
 AllTheBacteria.org includes plasmid contigs alongside chromosomal assemblies, all processed with identical QC standards. You can:
+- Track the distribution of a particular plasmid backbone across taxa.
+- Map the acquisition of AMR genes onto plasmid phylogenies.
+- Identify “super‑plasmids” that have acted as hubs for resistance gene exchange.
 
-Track the distribution of a particular plasmid backbone across taxa.
-Map the acquisition of AMR genes onto plasmid phylogenies.
-Identify “super‑plasmids” that have acted as hubs for resistance gene exchange.
 ## 3. Downloading the Dataset
 You do not need an OSF account—the data are publicly available through several mirrors.
 
-| Method | Command / Link | Tips |
-|--------|----------------|------|
-| **AWS S3 (most flexible)** | ```bash<br>aws s3 sync --no-sign-request s3://allthebacteria-assemblies/ ./ATB/<br>``` | Works without AWS credentials; use `--exclude/--include` to fetch only what you need (e.g., `*/genomes/`). |
+| Method                           | Command / Link                             | Tips |
+|----------------------------------|--------------------------------------------|------|
+| **AWS S3 (most flexible)** | `aws s3 sync --no-sign-request s3://allthebacteria-assemblies/ ./ATB/` | Works without AWS credentials; use `--exclude/--include` to fetch only what you need (e.g., `*/genomes/`). |
 | **Open Science Framework (OSF)** | Browse the project UI and click “Download”. | Handy for occasional, small‑scale pulls. |
-| **ENA FTP** | https://ftp.ebi.ac.uk/pub/databases/AllTheBacteria/Releases/0.2/ | Mirrors the S3 bucket; use any FTP client. |
+| **ENA FTP** | `https://ftp.ebi.ac.uk/pub/databases/AllTheBacteria/Releases/0.2/` | Mirrors the S3 bucket; use any FTP client. |
+
 Tip: If storage is a concern, sync only the annotation files (*.gff, *.faa) or the specific taxonomic groups you plan to analyse.
 
 ## 4. Real‑World Example: Tracing Plasmid‑Mediated AMR
 - A recent Science paper (Cazares et al., 2025, DOI: 10.1126/science.adr1522) leveraged a massive plasmid collection—very similar to AllTheBacteria.org—to reconstruct the evolution of multidrug‑resistant (MDR) plasmids.
 
-## Workflow Overview
+### Workflow Overview
 - Screen > 40 k plasmids for AMR genes using AMRFinderPlus.
 - Cluster plasmids by backbone similarity (Mash distance < 0.05).
 - Build a plasmid phylogeny and overlay AMR presence/absence.
 - Identify fusion events that generated “super‑plasmids” driving global MDR spread.
-## How AllTheBacteria.org Helps
+
+### How AllTheBacteria.org Helps
 * Uniform assemblies ensure plasmid backbones are comparable across decades.
 * Consistent AMR annotation removes the need to rerun detection pipelines on each download.
 * Massive sample size (millions of genomes, tens of thousands of plasmids) provides the statistical power to detect rare evolutionary events.
