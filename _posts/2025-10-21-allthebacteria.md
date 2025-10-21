@@ -49,18 +49,18 @@ You do not need an OSF account—the data are publicly available through several
 Tip: If storage is a concern, sync only the annotation files (*.gff, *.faa) or the specific taxonomic groups you plan to analyse.
 
 ## 4. Real‑World Example: Tracing Plasmid‑Mediated AMR
-A recent Science paper (Cazares et al., 2025, DOI: 10.1126/science.adr1522) leveraged a massive plasmid collection—very similar to AllTheBacteria.org—to reconstruct the evolution of multidrug‑resistant (MDR) plasmids.
+- A recent Science paper (Cazares et al., 2025, DOI: 10.1126/science.adr1522) leveraged a massive plasmid collection—very similar to AllTheBacteria.org—to reconstruct the evolution of multidrug‑resistant (MDR) plasmids.
 
-# Workflow Overview
-Screen > 40 k plasmids for AMR genes using AMRFinderPlus.
-Cluster plasmids by backbone similarity (Mash distance < 0.05).
-Build a plasmid phylogeny and overlay AMR presence/absence.
-Identify fusion events that generated “super‑plasmids” driving global MDR spread.
-# How AllTheBacteria.org Helps
-Uniform assemblies ensure plasmid backbones are comparable across decades.
-Consistent AMR annotation removes the need to rerun detection pipelines on each download.
-Massive sample size (millions of genomes, tens of thousands of plasmids) provides the statistical power to detect rare evolutionary events.
-By reproducing this pipeline with AllTheBacteria.org, you can explore similar questions in any taxonomic group—Enterobacteriaceae plasmids, Streptococcus phage‑derived elements, or environmental Archaea mobilome dynamics.
+## Workflow Overview
+- Screen > 40 k plasmids for AMR genes using AMRFinderPlus.
+- Cluster plasmids by backbone similarity (Mash distance < 0.05).
+- Build a plasmid phylogeny and overlay AMR presence/absence.
+- Identify fusion events that generated “super‑plasmids” driving global MDR spread.
+## How AllTheBacteria.org Helps
+* Uniform assemblies ensure plasmid backbones are comparable across decades.
+* Consistent AMR annotation removes the need to rerun detection pipelines on each download.
+* Massive sample size (millions of genomes, tens of thousands of plasmids) provides the statistical power to detect rare evolutionary events.
+* By reproducing this pipeline with AllTheBacteria.org, you can explore similar questions in any taxonomic group—Enterobacteriaceae plasmids, Streptococcus phage‑derived elements, or environmental Archaea mobilome dynamics.
 
 ## 5. Quick‑Start: Running Bactopia on AllTheBacteria Assemblies
 If you prefer an end‑to‑end workflow, the Bactopia suite integrates smoothly with the ATB data. Below is a minimal example using Legionella pneumophila assemblies.
@@ -84,19 +84,19 @@ bactopia \
 The legsta report can be merged across all isolates to produce a population‑wide serogroup table—ideal for epidemiological surveillance.
 
 ## 6. Key Take‑aways
-AllTheBacteria.org turns a chaotic mass of raw sequencing data into a clean, searchable library of millions of microbial genomes.
-It supports sketch‑based searches, gene‑level MSAs, large‑scale phylogenetics, and plasmid/AMR investigations.
-Downloading is straightforward via AWS S3, OSF, or ENA FTP—no registration required.
-The dataset has already powered high‑impact research (e.g., the Science plasmid‑AMR study) and integrates seamlessly with pipelines like Bactopia.
-Whether you’re a bioinformatician building a new comparative pipeline or a microbiologist hunting for the nearest neighbor of a clinical isolate, AllTheBacteria.org offers a ready‑made, high‑quality foundation for your next discovery.
+* AllTheBacteria.org turns a chaotic mass of raw sequencing data into a clean, searchable library of millions of microbial genomes.
+* It supports sketch‑based searches, gene‑level MSAs, large‑scale phylogenetics, and plasmid/AMR investigations.
+* Downloading is straightforward via AWS S3, OSF, or ENA FTP—no registration required.
+* The dataset has already powered high‑impact research (e.g., the Science plasmid‑AMR study) and integrates seamlessly with pipelines like Bactopia.
+* Whether you’re a bioinformatician building a new comparative pipeline or a microbiologist hunting for the nearest neighbor of a clinical isolate, AllTheBacteria.org offers a ready‑made, high‑quality foundation for your next discovery.
 
 Happy analysing!
 
 # References
 
-- Cazares, A., Figueroa, W., Cazares, D., et al. (2025). Pre and Post antibiotic epoch: the historical spread of antimicrobial resistance. Science. DOI: https://doi.org/10.1126/science.adr1522
-- AllTheBacteria.org – Official Repository: https://github.com/AllTheBacteria/AllTheBacteria
-- Sketch indexes README: https://ftp.ebi.ac.uk/pub/databases/AllTheBacteria/Releases/0.2/indexes/README.md
-- Sourmash issue discussing ATB integration: https://github.com/sourmash-bio/sourmash/issues/3247
-- Bactopia ATB formatter documentation: https://github.com/Pathogen-Genomics/bactopia/wiki/ATB-Formatter
+1. Cazares, A., Figueroa, W., Cazares, D., et al. (2025). Pre and Post antibiotic epoch: the historical spread of antimicrobial resistance. Science. DOI: https://doi.org/10.1126/science.adr1522
+2. AllTheBacteria.org – Official Repository: https://github.com/AllTheBacteria/AllTheBacteria
+3. Sketch indexes README: https://ftp.ebi.ac.uk/pub/databases/AllTheBacteria/Releases/0.2/indexes/README.md
+4. Sourmash issue discussing ATB integration: https://github.com/sourmash-bio/sourmash/issues/3247
+5. Bactopia ATB formatter documentation: https://github.com/Pathogen-Genomics/bactopia/wiki/ATB-Formatter
 (All links are live as of 21 Oct 2025.)
