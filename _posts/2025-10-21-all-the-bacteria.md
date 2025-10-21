@@ -1,4 +1,4 @@
-# AllTheBacteria.org: A Curated Resource for Bacterial & Archaeal Genomics
+## AllTheBacteria.org: A Curated Resource for Bacterial & Archaeal Genomics
 Date: 21 Oct 2025
 
 ## Introduction
