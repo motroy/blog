@@ -14,12 +14,22 @@ Public sequencing projects have generated an avalanche of raw data—much of it 
 
 ## 2. How to Use the Data
 ### a. As a skani‑style reference database
-If you already use genome‑sketching tools (e.g., skani, sourmash), AllTheBacteria.org supplies ready‑made indexes that act as a “Google” for microbial genomes.
+you can use sketchlib (https://github.com/bacpop/sketchlib.rust) to search against the ATB, AllTheBacteria.org supplies ready‑made indexes for microbial genomes (https://ftp.ebi.ac.uk/pub/databases/AllTheBacteria/Releases/0.2/indexes/sketchlib/).
 ```
-# Query your assembly against the AllTheBacteria sketch index
-skani query my_isolate.fasta \
-      -d /path/to/allthebacteria/sketches/ \
-      -o results.tsv
+#The distributed index is sketch size 1024 with k=17. You can create different ranges using the sketch subcommand.
+
+# 1. To calculate distances of a subset of the data, use a command such as:
+sketchlib dist -v -k 17 --subset Haemophilus_influenzae.txt --ani atb_sketchlib_v020 --threads 4 > dists.txt
+# Where the --subset file contains the list of samples you want to include.
+# Removing --ani will calculate Jaccard distances.
+
+# 2. To query new samples against the index, first sketch it:
+
+sketchlib sketch -v -o query -k 17 -f queries.tsv -s 1000
+#(where queries.tsv contains query samples with name and file location, tab separated)
+
+# 3. Then query it
+sketchlib dist -v -k 17 atb_sketchlib_v020 query
 ```
 Result: Rapidly retrieve the closest matches among millions of genomes.
 
