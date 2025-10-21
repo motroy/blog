@@ -24,7 +24,7 @@ skani query my_isolate.fasta \
 Result: Rapidly retrieve the closest matches among millions of genomes.
 
 ### b. Extract specific genes for Multiple‑Sequence Alignments (MSA)
-Because every genome carries the same annotation schema, pulling out a gene of interest (e.g., gyrB, recA, or an AMR determinant) is straightforward:
+Because every genome carries the same annotation schema (see details of how to retrieve Bakta annotations for ATB genomes of interest: https://github.com/AllTheBacteria/AllTheBacteria/issues/40), pulling out a gene of interest (e.g., gyrB, recA, or an AMR determinant) is straightforward:
 ```
 # Pseudocode – adapt to your preferred language/tool
 for gff in all_the_bacteria/*.gff; do
