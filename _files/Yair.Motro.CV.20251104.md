@@ -50,8 +50,9 @@ Involved in the development and implementation of a number of tools and pipeline
 
 *   **Bioinformatics Analysis**: Whole Genome Sequencing (WGS), Targeted & Untargeted Metagenomics, Microbiome Analysis (QIIME2, Mothur), Phylogenomics (SNP & cgMLST-based), Resistome & Virulome Analysis, Microbial GWAS/pWAS, Plasmid Analysis.
 *   **Programming & DevOps**:
-    *   **Languages**: Python, R
-    *   **Tools**: Jupyter Notebooks, RMarkdown, Git, GitHub, GitLab
+    *   **Languages**: Python, R, Bash
+    *   **Tools**: Jupyter Notebooks, RMarkdown, Git, GitHub, GitLab, VScode
+    *   **LLM Tools**: prompt engineering with gemini and agenic programming with jules
     *   **Pipelines**: Snakemake, Nextflow
     *   **Infrastructure**: HPC cluster management, Cloud computing environments, Docker, Singularity.
 *   **Data Science & Machine Learning**: Development of datasets for machine learning, analysis of adversarial attacks on NGS data, application of ML for strain typing (minMLST).
