@@ -1,5 +1,5 @@
 # Yair Motro, PhD
-<yair.motro@gmail.com> | [motroy.github.io/blog](https://motroy.github.io/blog)
+<yair.motro@gmail.com> | [motroy.github.io/blog](https://motroy.github.io/blog) | [motroy@github](https://github.com/motroy)
 
 ---
 
@@ -51,7 +51,7 @@ Involved in the development and implementation of a number of tools and pipeline
 *   **Bioinformatics Analysis**: Whole Genome Sequencing (WGS), Targeted & Untargeted Metagenomics, Microbiome Analysis (QIIME2, Mothur), Phylogenomics (SNP & cgMLST-based), Resistome & Virulome Analysis, Microbial GWAS/pWAS, Plasmid Analysis.
 *   **Programming & DevOps**:
     *   **Languages**: Python, R, Bash
-    *   **Tools**: Jupyter Notebooks, RMarkdown, Git, GitHub, GitLab, VScode
+    *   **Tools**: Jupyter Notebooks, RMarkdown, Git, GitHub, GitLab, VScode, CI/CD with GitHub actions
     *   **LLM Tools**: prompt engineering with gemini and agenic programming with jules
     *   **Pipelines**: Snakemake, Nextflow
     *   **Infrastructure**: HPC cluster management, Cloud computing environments, Docker, Singularity.
